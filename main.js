@@ -15,7 +15,7 @@ const weatherStore={
     },
 
    async fetchData(){
-     const res=await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.privateCity},${this.privateCountry}&units=metric&appid=${this.API_KEY}`)
+     const res=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.privateCity},${this.privateCountry}&units=metric&appid=${this.API_KEY}`)
      return await res.json()
      },
 }
